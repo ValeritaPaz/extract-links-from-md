@@ -8,5 +8,5 @@ El modulo esta desarrollado con **JavaScript**. Será publicado en npm.
 
 ## Equipo de Desarrollo
 
-Claudina Cortez (https://github.com/claudinacr, Valeria Paz (https://github.com/ValeritaPaz), Raquel Jarpa (https://github.com/Klebuck). 
+Claudina Cortez (https://github.com/claudinacr, Valeria Navarrete (https://github.com/ValeritaPaz), Raquel Jarpa (https://github.com/Klebuck). 
 
