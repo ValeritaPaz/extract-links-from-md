@@ -1,4 +1,61 @@
 var extract_links = require('./lib/extract_links');
+var http = require('http');
+var fs = require('fs');
+var path = require('path');
+
+// Crear Servidor Web
+http.createServer(function (request, response) {
+console.log('request ', request.url);
+
+    var filePath = '.' + request.url;
+
+    if (filePath == './') {
+        filePath = './index.html';
+    }
+
+    var extname = String(path.extname(filePath)).toLowerCase();
+    var contentType = 'text/html';
+    var mimeTypes = {
+        '.html': 'text/html',
+        '.js': 'text/javascript',
+        '.css': 'text/css',
+        '.json': 'application/json',
+        '.png': 'image/png',
+        '.jpg': 'image/jpg',
+        '.gif': 'image/gif',
+        '.wav': 'audio/wav',
+        '.mp4': 'video/mp4',
+        '.woff': 'application/font-woff',
+        '.ttf': 'application/font-ttf',
+        '.eot': 'application/vnd.ms-fontobject',
+        '.otf': 'application/font-otf',
+        '.svg': 'application/image/svg+xml'
+    };
+
+    contentType = mimeTypes[extname] || 'application/octet-stream';
+
+    fs.readFile(filePath, function(error, content) {
+        if (error) {
+            if(error.code == 'ENOENT'){
+                fs.readFile('./404.html', function(error, content) {
+                    response.writeHead(200, { 'Content-Type': contentType });
+                    response.end(content, 'utf-8');
+                });
+            }
+            else {
+                response.writeHead(500);
+                response.end('Sorry, check with the site admin for error: '+error.code+' ..\n');
+                response.end();
+            }
+        }
+        else {
+            response.writeHead(200, { 'Content-Type': contentType });
+            response.end(content, 'utf-8');
+        }
+    });
+
+}).listen(8080);
+console.log('Server running at http://127.0.0.1:8080/');
 
 var str = `# Lyft
 
@@ -18,11 +75,11 @@ estructura de carpetas y archivos donde colocarás tu código.
    de este repositorio.
 
 2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+   es \`git clone\` y su estructura normalmente se ve así:
 
-   ```bash
+   \`\`\`bash
    git clone https://github.com/<nombre-de-usuario>/lyft.git
-   ```
+   \`\`\`
 
 ## Objetivo
 
@@ -33,35 +90,35 @@ a lograr:
 
 ## Consideraciones
 
-* Encontrarás un archivo base `index.html` en el cual deberás escribir la
+* Encontrarás un archivo base \`index.html\` en el cual deberás escribir la
   estructura de tu proyecto y enlazar tus archivos de estilos (CSS).
 
-* En la carpeta `css` tendrás un archivo base `main.css` donde agregarás los
+* En la carpeta \`css\` tendrás un archivo base \`main.css\` donde agregarás los
   estilos necesarios para tu proyecto:
 
-* Dentro de la carpeta `assets` se encuentra la carpeta `images` donde
+* Dentro de la carpeta \`assets\` se encuentra la carpeta \`images\` donde
   encontrarás todas las imágenes necesarias para completar tu proyecto.
 
-* Deberás **actualizar el archivo `README.md`** explicando el contenido de tu
+* Deberás **actualizar el archivo \`README.md\`** explicando el contenido de tu
   repositorio.
 
-* Esta web utiliza la tipografía `Montserrat`.
+* Esta web utiliza la tipografía \`Montserrat\`.
 
 * La paleta de colores puedes obtenerla inspeccionado el sitio original, pero
   para ganar tiempo, puedes usar los siguientes:
 
-  - Botones, hover: `#FF00BF`
-  - Fondo de `footer`: `#333447`
-  - Título del formulario: `#352384`
-  - Texto del formulario: `#728099`
-  - Gradiente morado: `linear-gradient(#76278F, #2B1E66);`
+  - Botones, hover: \`#FF00BF\`
+  - Fondo de \`footer\`: \`#333447\`
+  - Título del formulario: \`#352384\`
+  - Texto del formulario: \`#728099\`
+  - Gradiente morado: \`linear-gradient(#76278F, #2B1E66);\`
 
 * Para el footer, deberás tomar en cuenta que tiene un hover y se ve como en la
   siguiente imagen:
 
   ![Lyft - Footer](docs/footer.gif)
 
-  Además, los íconos deberás obtenerlo de `Icomoon`.
+  Además, los íconos deberás obtenerlo de \`Icomoon\`.
 
 * Para este reto, encontrarás ciertas cosas que probablemente aun no has visto
   en clase (formularios, videos de Youtube). No te preocupes, estamos seguros
@@ -71,8 +128,8 @@ a lograr:
     * https://www.youtube.com/watch?v=fLSmUWOYpKw
     * https://www.youtube.com/watch?v=V7j8Aqxmbs8
     * https://www.youtube.com/watch?v=xj2VWLV0xCU
-  - Para agregar los videos, averigua sobre la etiqueta `iframe`.
-  - Para el formulario, revisa las etiquetas como form e input`.
+  - Para agregar los videos, averigua sobre la etiqueta \`iframe\`.
+  - Para el formulario, revisa las etiquetas como form e \`input\`.
 
 * Puedes ver el [sitio original](https://www.lyft.com/), sin embargo, su diseño
   ya ha cambiado en ciertas partes, así que tu fuente de verdad es la imagen que
@@ -95,7 +152,7 @@ Este reto será evaluado sobre lo siguiente:
 
 var resultado = extract_links.extract(str);
 
-console.log(resultado);
+//console.log(resultado);
 
 var str2 = `# Freelancer
 
@@ -115,11 +172,11 @@ estructura de carpetas y archivos donde colocarás tu código.
    de este repositorio.
 
 2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+   es \`git clone\` y su estructura normalmente se ve así:
 
-   ```bash
+   \`\`\`bash
    git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
+   \`\`\`
 
 ## Objetivo
 
@@ -130,23 +187,23 @@ a lograr:
 
 ## Consideraciones
 
-* Encontrarás un archivo base `index.html` en el cual deberás escribir la
+* Encontrarás un archivo base \`index.html\` en el cual deberás escribir la
   estructura de tu proyecto y enlazar tus archivos de estilos (CSS).
 
-* En la carpeta `css` tendrás un archivo base `main.css` donde agregarás los
+* En la carpeta \`css\` tendrás un archivo base \`main.css\` donde agregarás los
   estilos necesarios para tu proyecto.
 
-* Dentro de la carpeta `assets` se encuentra la carpeta `images` donde
+* Dentro de la carpeta \`assets\` se encuentra la carpeta \`images\` donde
   encontrarás todas las imágenes necesarias para completar tu proyecto.
 
-* Deberás **actualizar el archivo `README.md`** explicando el contenido de tu
+* Deberás **actualizar el archivo \`README.md\`** explicando el contenido de tu
   repositorio.
 
-* Esta web utiliza 2 tipografías: `Montserrat` y `Lato`.
+* Esta web utiliza 2 tipografías: \`Montserrat\` y \`Lato\`.
 
 * La paleta de colores puedes obtenerla inspeccionado el sitio original, pero
-  para ganar tiempo, puedes usar los siguientes: `#2c3e50`, `#18bc9c`,
-  `#212529`.
+  para ganar tiempo, puedes usar los siguientes: \`#2c3e50\`, \`#18bc9c\`,
+  \`#212529\`.
 
 * Los íconos de redes sociales puedes obtenerlos de [Font Awesome](http://fontawesome.io/).
 
@@ -154,10 +211,10 @@ a lograr:
   en clase (formularios). No te preocupes, estamos seguros que lo afrontarás con
   éxito, de igual forma aquí unos tips:
 
-  - Para el formulario, revisa las etiquetas como `form`, `input`, `button`.
+  - Para el formulario, revisa las etiquetas como \`form\`, \`input\`, \`button\`.
 
 * El subrayado que incluye la estrella en las diversas secciones del sitio, en
-  la web original se hace con un ícono y pseudoelementos (`:after`, `:before`),
+  la web original se hace con un ícono y pseudoelementos (\`:after\`, \`:before\`),
   es un reto entretenido, sin embargo, no trates de enfocarte en esa parte desde
   un inicio ya que no es el objetivo principal del reto :)
 
@@ -175,10 +232,10 @@ Este reto será evaluado sobre lo siguiente:
 * Pixel perfect (replicar el diseño con exactitud)
 * Nombramiento de clases, id, etc
 * Indentación
-* Archivo `README.md` actualizado y correctamente redactado
-* Uso de comentarios para hacer tu código más legible`
+* Archivo \`README.md\` actualizado y correctamente redactado
+* Uso de comentarios para hacer tu código más legible`;
 
-var segundoResultado ¿ extract_links.extract(str2);
+var segundoResultado = extract_links.extract(str2);
 
 console.log (segundoResultado);
 
@@ -258,10 +315,10 @@ En este curso trabajaremos en nuestro primer proyecto de diseño, aprendiendo la
 
 * **Venta de pasajes de bus**: El entregable final del curso será un prototipo validado de una aplicación de venta de pasajes de bus. 
 
-Main tags: `research`, `entrevistas`, `observación`, `prototipado`, `mvp`, `testing`, `priorizacion`, `content prototyping`, `customer journey maps`, `user personas`.
+Main tags: \`research\`, \`entrevistas\`, \`observación\`, \`prototipado\`, \`mvp\`, \`testing\`, \`priorizacion\`, \`content prototyping\`, \`customer journey maps\`, \`user personas\`.
 
-Secondary tags: `sketching`, `paper prototyping`, `content prototyping`, `interactive prototype`,
-`investigación contextual`, `encuestas`, `Figma`, `Marvel`.
+Secondary tags: \`sketching\`, \`paper prototyping\`, \`content prototyping\`, \`interactive prototype\`,
+\`investigación contextual\`, \`encuestas\`, \`Figma\`, \`Marvel\`.
 
 *** 
 
@@ -280,8 +337,8 @@ Todos los materiales de este repo son (c) 2017 [Laboratoria](http;//laboratoria.
 
 
 Este trabajo está publicado bajo la licencia [Creative commons
-Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/).`
+Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/).`;
 
-  var tercerResultado = extract_links.extract(str3);
+var tercerResultado = extract_links.extract(str3);
 
-  console.log(tercerResultado);
+console.log(tercerResultado);

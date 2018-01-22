@@ -1,0 +1,27 @@
+{
+  "name": "extract-links-from-md",
+  "version": "1.0.0",
+  "description": "Module to extract links from a markdown string",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValeritaPaz/extract-links-from-md.git"
+  },
+  "keywords": [
+    "Markdown",
+    "Links",
+    "Extractor"
+  ],
+  "author": "Claudina Cortez <claudinacr@gmail.com> (https://github.com/claudinacr)",
+  "license": "(MIT)",
+  "bugs": {
+    "url": "https://github.com/ValeritaPaz/extract-links-from-md.git/issues"
+  },
+  "homepage": "https://github.com/ValeritaPaz/extract-links-from-md#readme"
+}
