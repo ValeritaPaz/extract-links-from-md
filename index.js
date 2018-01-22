@@ -1,5 +1,5 @@
 var extract_links = require('./lib/extract_links');
-var http = require('http');
+/* var http = require('http');
 var fs = require('fs');
 var path = require('path');
 
@@ -56,7 +56,7 @@ console.log('request ', request.url);
 
 }).listen(8080);
 console.log('Server running at http://127.0.0.1:8080/');
-
+ */
 var str = `# Lyft
 
 * **Track:** _Common Core_
@@ -152,7 +152,7 @@ Este reto será evaluado sobre lo siguiente:
 
 var resultado = extract_links.extract(str);
 
-//console.log(resultado);
+console.log(resultado);
 
 var str2 = `# Freelancer
 
