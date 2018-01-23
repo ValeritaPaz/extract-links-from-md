@@ -152,7 +152,7 @@ Este reto será evaluado sobre lo siguiente:
 
 var resultado = extract_links.extract(str);
 
-console.log(resultado);
+//console.log(resultado);
 
 var str2 = `# Freelancer
 
@@ -237,7 +237,7 @@ Este reto será evaluado sobre lo siguiente:
 
 var segundoResultado = extract_links.extract(str2);
 
-console.log (segundoResultado);
+//console.log (segundoResultado);
 
 var str3 = `# User Experience Design
 
@@ -336,8 +336,7 @@ Todos los materiales de este repo son (c) 2017 [Laboratoria](http;//laboratoria.
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 
-Este trabajo está publicado bajo la licencia [Creative commons
-Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/).`;
+Este trabajo está publicado bajo la licencia [Creative commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/).`;
 
 var tercerResultado = extract_links.extract(str3);
 
