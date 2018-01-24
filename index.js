@@ -235,7 +235,7 @@ Este reto será evaluado sobre lo siguiente:
 * Archivo \`README.md\` actualizado y correctamente redactado
 * Uso de comentarios para hacer tu código más legible`;
 
-var segundoResultado = extract_links.extract(str2);
+//var segundoResultado = extract_links.extract(str2);
 
 //console.log (segundoResultado);
 
