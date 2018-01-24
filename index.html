@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Extraer links de un archivo con formato Markdown</title>
+   <meta charset="UTF-8">
+   <title>Extraer links de un archivo con formato Markdown</title>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+
 <body>
-	
+   <nav>
+       <div class="nav-wrapper">
+           <a href="#" class="brand-logo">MARKDOWN</a>
+       </div>
+   </nav>
+
+   <div class="card-panel teal lighten-2" id="fondo">
+       <div class="row colorTextArea">
+           <form class="col s12">
+               <div class="row">
+                   <div class="input-field col s12">
+                       <textarea id="textarea1" class="materialize-textarea" placeholder='Escribe aquí un texto en formato MARKDOWN...'></textarea>
+                       <label for="textarea1"></label>
+                   </div>
+               </div>
+           </form>
+       </div>
+
+       <button class="btn waves-effect waves-light" type="submit" name="action" id="button">Buscar
+           <i class="material-icons right"></i>
+       </button>
+   </div>
+   <div class="row blue lighten-3 box">
+       <div class="col s12" id="boxResponse">
+
+       </div>
+   </div>
+   <script src="app.js"></script>
 </body>
+
 </html>
