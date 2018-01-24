@@ -1,0 +1,27 @@
+.nav-wrapper{
+    text-align: center;
+}
+
+.buscador{
+    margin-top: 20em;
+    margin-left: 20em;
+    width: 50em;
+}
+
+#fondo{
+    margin: 0;
+}
+
+.colorTextArea{
+   background-color: white;
+}
+
+.materialize-textarea{
+   overflow:visible !important;
+   height: 15em !important;
+   text-align: justify
+}
+
+.box{
+   height: 10em;
+}
