@@ -1,31 +1,46 @@
 .nav-wrapper{
-    text-align: center;
+   text-align: center;
 }
 
 .buscador{
-    margin-top: 20em;
-    margin-left: 20em;
-    width: 30em;
+   margin-top: 20em;
+   margin-left: 20em;
+   width: 15em;
 }
 
-#fondo{
-    margin: 0;
+#backColor{
+   margin: 0;
+   background-color: #fdd8b4;
 }
 
 .colorTextArea{
-   background-color: white;
+  background-color: white;
 }
 .materialize-textarea{
-   overflow:visible !important;
-   height: 15em !important;
-   text-align: justify
+  overflow:visible !important;
+  height: 7.5em !important;
+  text-align: justify;
 }
 
 #textarea1{
-    text-align: justify;
+   text-align: justify;
 }
 
 #boxResponse{
-    font-size: 1em;
-    font-weight: bold;
+   font-size: 1.4em;
+   font-weight: bold;
+   color: #ffe4b8;
+}
+
+.box{
+   background-color: #ff7671;
+}
+
+.btn{
+   background-color: white;
+   color: black;
+}
+
+button{
+   margin-bottom: 1em;
 }
