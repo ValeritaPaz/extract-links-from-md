@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/ValeritaPaz/extract-links-from-md.git/issues"
   },
-  "homepage": "https://github.com/ValeritaPaz/extract-links-from-md#readme"
+  "homepage": "https://github.com/ValeritaPaz/extract-links-from-md#readme",
+  "dependencies": {}
 }

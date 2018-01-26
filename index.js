@@ -5,7 +5,7 @@ var path = require('path');
 
 // Crear Servidor Web
 http.createServer(function (request, response) {
-  console.log('request ', request.url);
+  //console.log('request ', request.url);
 
   var filePath = '.' + request.url;
 
@@ -55,7 +55,8 @@ http.createServer(function (request, response) {
       response.end(content, 'utf-8');
     }
   });
-  console.log(request.url);
+  //console.log(request.url);
+  //Capturando el request del index
   if (request.method == 'POST' && request.url == '/Extract') {
     var body = '';
     var links;
@@ -70,16 +71,13 @@ http.createServer(function (request, response) {
     });
     request.on('end', () => {
       //console.log(body);
-      console.log();
       //console.log(response.body);
       response.end(JSON.stringify(extract_links.extract(body)),'utf8');
     });
   }
 
 }).listen(8080);
-console.log('Server running at http://127.0.0.1:8080/');
-
-//Capturando el request del index
+console.log('Servidor Corriendo En http://127.0.0.1:8080/');
 
 
 var str = `# Lyft
@@ -177,7 +175,7 @@ Este reto será evaluado sobre lo siguiente:
 
 var resultado = extract_links.extract(str);
 
-console.log(resultado);
+//console.log(resultado);
 
 var str2 = `# Freelancer
 
