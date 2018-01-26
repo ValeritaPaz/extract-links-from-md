@@ -72,7 +72,7 @@ http.createServer(function (request, response) {
     request.on('end', () => {
       //console.log(body);
       //console.log(response.body);
-      response.end(JSON.stringify(extract_links.extract(body)),'utf8');
+      response.end(JSON.stringify(extract_links.extract(body), 'undefined', 2),'utf8');
     });
   }
 

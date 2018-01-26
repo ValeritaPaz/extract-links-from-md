@@ -1,4 +1,3 @@
-
 var buttonSearch = document.querySelector('#button');
 
 var textArea = document.querySelector('#textarea1');
@@ -10,9 +9,9 @@ buttonSearch.addEventListener('click', function () {
     var url = 'http://127.0.0.1:8080/Extract';
     xhr.open('POST', url, true);
     xhr.responseType = 'text';
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            
+
             boxResponse.textContent = xhr.responseText;
 
             console.log(boxResponse.textContent);
@@ -22,6 +21,5 @@ buttonSearch.addEventListener('click', function () {
     xhr.send(text);
     console.log(xhr.status);
 });
-
 
 
