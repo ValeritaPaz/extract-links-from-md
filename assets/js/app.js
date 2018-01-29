@@ -22,4 +22,3 @@ buttonSearch.addEventListener('click', function () {
     console.log(xhr.status);
 });
 
-
