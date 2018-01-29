@@ -1,15 +1,14 @@
-.nav-wrapper{
-    text-align: center;
-}
+
 
 .buscador{
     margin-top: 20em;
     margin-left: 20em;
-    width: 30em;
+    width: 15em;
 }
 
-#fondo{
+#backColor{
     margin: 0;
+    background-color: #545252;
 }
 
 .colorTextArea{
@@ -17,15 +16,173 @@
 }
 .materialize-textarea{
    overflow:visible !important;
-   height: 15em !important;
-   text-align: justify
+   height: 7.5em !important;
+   text-align: justify;
 }
 
 #textarea1{
-    text-align: justify;
+    background-color: white;
+    resize: none;
+    
 }
 
 #boxResponse{
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: bold;
+    color: #545252;
+}
+
+.box{
+    background-color: white;
+}
+
+.btn{
+    background-color: #36bfe7;
+    color: black;
+}
+
+button{
+    margin-bottom: 1em;
+}
+
+nav{
+    background-color:#ffffff;
+
+}
+
+.page-footer{
+    background-color: #17426f;
+}
+
+.info{
+    background-color: white;
+    height: 30em;
+    width: 100%;
+    
+}
+
+nav .brand-logo {
+    position: absolute;
+    color: black;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+}
+
+
+
+img[src="assets/images/tools-and-utensils.png"]{
+    width: 4em;
+}
+
+
+.title{
+    font-size: 1em;
+}
+
+.buttonGreen{
+    background-color: #a1e2b2;
+}
+
+.buttonOrange{
+    background-color: #ffc5a4;
+}
+
+.row .col.s12 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+
+
+  .nav-wrapper {
+    background-color: #ffffff;
+}
+
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: black;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.fontBlue{
+    color: #36bfe7;
+    font-family: 'Source Sans Pro', sans-serif;
+font-weight: bold;
+font-size: 2em;
+}
+
+.fontGray{
+    color: #d8d8d8;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+
+
+}
+
+.information h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.tittleLinks{
+    font-weight: bolder;
+}
+
+.textAreaOne,
+.textAreaTwo {
+    -webkit-box-shadow: 1px -1px 0px 4px rgba(54,191,231,1);
+-moz-box-shadow: 1px -1px 0px 4px rgba(54,191,231,1);
+box-shadow: 1px -1px 0px 4px rgba(54,191,231,1);
+}
+.textAreaOne {
+    margin-right: 1em;
+}
+
+.textAreaTwo{
+    height: 13.65em;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #f5fd85;
+}
+
+.btn, .btn-large {
+    text-decoration: none;
+    color: #fff;
+    background-color: #36bfe7;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
 }
