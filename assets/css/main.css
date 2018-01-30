@@ -201,3 +201,27 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     transition: .2s ease-out;
     cursor: pointer;
 }
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.counter{
+    margin-left: 2em;
+    color: #D45B61;
+}
+
+.response{
+    font-weight: bolder;
+
+}
+
+span p{
+    display: inline;
+}
+
+.counter{
+    font-weight: bolder;
+
+}
