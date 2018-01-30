@@ -22,10 +22,10 @@ padding-bottom: 1.5em;
 }
 .materialize-textarea{
    overflow:visible !important;
-   height: 15em !important;
+   height: 11.5em !important;
    text-align: justify;
-   
 }
+
 
 #textarea1{
     background-color: #FFD7B8;
@@ -76,9 +76,6 @@ nav .brand-logo {
 
 
 
-img[src="assets/images/logo.png"]{
-    width: 10em;
-}
 
 
 .title{
@@ -104,7 +101,7 @@ nav ul a {
     -webkit-transition: background-color .3s;
     transition: background-color .3s;
     font-size: 1rem;
-    color: black;
+    color: black !important;
     display: block;
     padding: 0 15px;
     cursor: pointer;
@@ -128,15 +125,21 @@ font-size: 2em;
 
 }
 
-.information{
-    text-align: center;
-    background-image: url("../images/logo2.png");
-    background-repeat: no-repeat;
+img[src="assets/images/logo2.png"]{
+width: 8em;
+margin-top: -14em;
+opacity: 0.4;
+filter: alpha(opacity=50); /* For IE8 and earlier */
 }
+
 .information h3{
     font-family: 'Source Sans Pro', sans-serif;
     padding-top: 1em;
     padding-bottom: 1em;
+    text-align: center;
+}
+
+.information{
     text-align: center;
 }
 
@@ -145,22 +148,20 @@ font-size: 2em;
 }
 
 .textAreaOne{
-    height: 13.65em;
     border-radius: 10px 0px 0px 10px;
     -moz-border-radius: 10px 0px 0px 10px;
     -webkit-border-radius: 10px 0px 0px 10px;
     background-color: #FFD7B8;
-    height: 23em;
+    height: 22em;
 
 }
 
 .textAreaTwo{
-    height: 13.65em;
     border-radius: 0px 10px 10px 0px;
 -moz-border-radius: 0px 10px 10px 0px;
 -webkit-border-radius: 0px 10px 10px 0px;
 background-color: #C4E4E1;
-height: 23em;
+height: 22em;
 
 }
 
@@ -184,20 +185,19 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 
 
 
+
+.btn:hover{
+    background-color: #D45B61 !important;
+}
+
+
 .btn, .btn-large {
     text-decoration: none;
     color: #fff;
-    background-color: #FA9095;
+    background-color: #FA9095 !important;
     text-align: center;
     letter-spacing: .5px;
     -webkit-transition: .2s ease-out;
     transition: .2s ease-out;
     cursor: pointer;
-}
-.btn:hover{
-    background-color: #D45B61
-}
-
-.input-field{
-    margin-bottom: 1em;
 }
