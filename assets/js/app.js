@@ -14,13 +14,26 @@ buttonSearch.addEventListener('click', function () {
 
             boxResponse.textContent = xhr.responseText;
 
-            console.log(boxResponse.textContent);
+
+
+
+
+            //console.log(boxResponse.textContent);
         }
+        var longitud;
+        longitud = (JSON.parse(boxResponse.textContent)).length;
+        console.log(longitud);
+        var responseCounter = document.querySelector('.responseCounter');
+        responseCounter.innerHTML = '';
+        if (longitud != 8) {
+            responseCounter.appendChild(document.createTextNode(longitud));
+        } else if (longitud == 8) {
+            responseCounter.appendChild(document.createTextNode(0));
+        }
+
+
     };
     xhr.setRequestHeader('Content-Type', 'charset=UTF-8');
     xhr.send(text);
     console.log(xhr.status);
 });
-
-
-
