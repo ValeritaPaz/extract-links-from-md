@@ -24,5 +24,7 @@
     "url": "https://github.com/ValeritaPaz/extract-links-from-md.git/issues"
   },
   "homepage": "https://github.com/ValeritaPaz/extract-links-from-md#readme",
-  "dependencies": {}
+  "dependencies": {
+    "materialize-css": "^0.100.2"
+  }
 }
