@@ -1,5 +1,4 @@
 
-
 .buscador{
     margin-top: 20em;
     margin-left: 20em;
@@ -16,21 +15,24 @@
    border-radius: 10px 10px 10px 10px;
 -moz-border-radius: 10px 10px 10px 10px;
 -webkit-border-radius: 10px 10px 10px 10px;
-background-color: #36bfe7;
+background-color: #FCB6B9;
 padding-top: 1.5em;
 padding-bottom: 1.5em;
 
 }
 .materialize-textarea{
    overflow:visible !important;
-   height: 7.5em !important;
+   height: 15em !important;
    text-align: justify;
+   
 }
 
 #textarea1{
-    background-color: #f5fd85;
+    background-color: #FFD7B8;
     resize: none;
 }
+
+#textarea1::placeholder { color: #B46B33}
 
 #boxResponse{
     font-size: 1.4em;
@@ -42,10 +44,7 @@ padding-bottom: 1.5em;
     background-color: white;
 }
 
-.btn{
-    background-color: #36bfe7;
-    color: black;
-}
+
 
 button{
     margin-bottom: 1em;
@@ -86,13 +85,7 @@ img[src="assets/images/logo.png"]{
     font-size: 1em;
 }
 
-.buttonGreen{
-    background-color: #a1e2b2;
-}
 
-.buttonOrange{
-    background-color: #ffc5a4;
-}
 
 .row .col.s12 {
     width: 100%;
@@ -120,14 +113,14 @@ nav ul a {
 }
 
 .fontBlue{
-    color: #36bfe7;
+    color: #FA9095;
     font-family: 'Source Sans Pro', sans-serif;
 font-weight: bold;
 font-size: 2em;
 }
 
 .fontGray{
-    color: #d8d8d8;
+    color: #C4E4E1;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     font-size: 2em;
@@ -142,8 +135,8 @@ font-size: 2em;
 }
 .information h3{
     font-family: 'Source Sans Pro', sans-serif;
-    padding-top: 1.5em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: center;
 }
 
@@ -156,8 +149,8 @@ font-size: 2em;
     border-radius: 10px 0px 0px 10px;
     -moz-border-radius: 10px 0px 0px 10px;
     -webkit-border-radius: 10px 0px 0px 10px;
-    background-color: #f5fd85;
-    height: 17em;
+    background-color: #FFD7B8;
+    height: 23em;
 
 }
 
@@ -166,8 +159,8 @@ font-size: 2em;
     border-radius: 0px 10px 10px 0px;
 -moz-border-radius: 0px 10px 10px 0px;
 -webkit-border-radius: 0px 10px 10px 0px;
-background-color: #ededee;
-height: 17em;
+background-color: #C4E4E1;
+height: 23em;
 
 }
 
@@ -194,10 +187,17 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 .btn, .btn-large {
     text-decoration: none;
     color: #fff;
-    background-color: #36bfe7;
+    background-color: #FA9095;
     text-align: center;
     letter-spacing: .5px;
     -webkit-transition: .2s ease-out;
     transition: .2s ease-out;
     cursor: pointer;
+}
+.btn:hover{
+    background-color: #D45B61
+}
+
+.input-field{
+    margin-bottom: 1em;
 }
