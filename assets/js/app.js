@@ -20,16 +20,15 @@ buttonSearch.addEventListener('click', function () {
 
             //console.log(boxResponse.textContent);
         }
-        var longitud;
-        longitud = (JSON.parse(boxResponse.textContent)).length;
-        console.log(longitud);
+        var textParse;
+        textParse = (JSON.parse(boxResponse.textContent));
+        console.log(textParse);
         var responseCounter = document.querySelector('.responseCounter');
         responseCounter.innerHTML = '';
-        if (longitud != 8) {
-            responseCounter.appendChild(document.createTextNode(longitud));
-        } else if (longitud == 8) {
-            responseCounter.appendChild(document.createTextNode(0));
-        }
+        if (Array.isArray(textParse)) {
+            responseCounter.appendChild(document.createTextNode(textParse.length));
+        } else {
+            responseCounter.appendChild(document.createTextNode(0));        }
 
 
     };
