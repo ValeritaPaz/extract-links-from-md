@@ -22,7 +22,7 @@ padding-bottom: 1.5em;
 }
 .materialize-textarea{
    overflow:visible !important;
-   height: 11.5em !important;
+   height: 11.1em !important;
    text-align: justify;
 }
 
@@ -158,10 +158,10 @@ filter: alpha(opacity=50); /* For IE8 and earlier */
 
 .textAreaTwo{
     border-radius: 0px 10px 10px 0px;
--moz-border-radius: 0px 10px 10px 0px;
--webkit-border-radius: 0px 10px 10px 0px;
-background-color: #C4E4E1;
-height: 22em;
+    -moz-border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    background-color: #C4E4E1;
+    height: 22em;
 
 }
 
@@ -221,7 +221,11 @@ span p{
     display: inline;
 }
 
-.counter{
+.counter {
     font-weight: bolder;
 
+}
+
+.counter .textCounter{
+    margin-top: -1em;
 }
