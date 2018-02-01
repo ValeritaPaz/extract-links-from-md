@@ -36,3 +36,5 @@ buttonSearch.addEventListener('click', function () {
     xhr.send(text);
     console.log(xhr.status);
 });
+
+ 

@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css">
+    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
@@ -17,10 +19,9 @@
                <span class="fontBlue">&nbsp;Extract</span>
                <span class="fontGray"> Links</span>&nbsp;
            </a>
+
+            
            <ul id="nav-mobile" class="right hide-on-med-and-down">
-               <li>
-                   <a href="#">Modo de Uso</a>
-               </li>
                <li>
                    <a class="waves-effect waves-light btn">Download Library</a>
                </li>
@@ -63,6 +64,40 @@
             </div>
         </div>
     </div>
+    <footer class="page-footer">
+       <div class="container">
+           <div class="row">
+               <div class="col l4 s12">
+                   <h5 class="white-text">Extract Links</h5>
+                   <p class="grey-text text-lighten-4">El extractor de Links de archivos Markdown, es un módulo de Node.js, cuya funcionalidad se centra en
+                       extraer todos los links encontrados en un archivo en formato Markdown.</p>
+
+               </div>
+               <div class="col l4 s12">
+                   <h5 class="white-text">Desarrolladores</h5>
+                   <p class="grey-text text-lighten-4 developer">
+                       <a href="https://github.com/Klebuck">Raquel Jarpa</a>
+                   </p>
+                   <p class="grey-text text-lighten-4 developer">
+                       <a href="https://github.com/Klebuck">Claudina Cortez</a>
+               </div>
+               <div class="col l4 s12 entorno" style="overflow: hidden;">
+                   <h5 class="white-text">Entorno de desarrollo</h5>
+                   <p>
+                   <a href="http://materializecss.com/">Materialize</a>
+                   </p>
+                   <p>
+                   <a href="https://nodejs.org/es/">Node js</a>
+                   </p>
+                   <a href="https://mochajs.org/">Mocha js</a>
+               </div>
+           </div>
+
+           <div class="footer-copyright">
+               <div class="container">© 2018 Extract Links, All rights reserved.
+               </div>
+           </div>
+   </footer>
 
 
     <script src="assets/js/app.js"></script>
