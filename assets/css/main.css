@@ -255,3 +255,20 @@ section h3{
     font-weight: bold;
     margin-top: 2em;
 }
+
+.modal-trigger{
+    left: 50em;
+}
+
+h4{
+    color: #D45B61;
+}
+
+.collapsible-header{
+    width: auto;
+    height: 10em;
+    background-color: red;
+}
+p{
+    background-color: #D45B61; 
+}

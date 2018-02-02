@@ -21,6 +21,36 @@
                 <span class="fontBlue">&nbsp;Extract</span>
                 <span class="fontGray"> Links</span>&nbsp;
             </a>
+             <!-- Modal Trigger -->
+             <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modo de uso</a>
+             <!-- Modal Structure -->
+             <div id="modal1" class="modal modal-fixed-footer">
+             <div class="modal-content">
+             <h4>Pasos a seguir</h4>
+             <p>
+             <br>
+            Desde la consola, ubicarse en el directorio de la librería y escribir index.js. De esta maera se inicia el servidor.
+
+           Paso # 2
+           <br>
+           Hacer clic en el url que aparece en el terminal http://127.0.0.1:8080/
+
+        Paso # 3
+Una vez que se encuentre ubicado en la página web, agregar texto en formato markdown en el campo que se encuentra ubicado en el lado izquierdo de la página y haz clic en el botón Extraer Links. Del lado derecho aparecerán los links encontrados.
+
+Section 4
+Otra manera de usar la librería es a través de la consola. Para ello primero debes abrir con tu editor de texto, el archivo index.js
+
+Section 5
+Dentro del archivo, debe inicializar una variable y asignarle un string en el formato markdown. Luego inicializas otra variable y dentro de ella, llamas a la función, y se le pasa como argumento la variable que contiene el string. var resultado = extract_links.extract(str);
+
+Section 6
+Guarda los cambios. Ahora en el terminal, escribe el comando node index.js y presiona la tecla ENTER. Ahora saldrán los links en contrados en el texto.</p>
+             </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    </div>
+  </div>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
                     <a class="waves-effect waves-light btn" href="https://www.npmjs.com/package/extract-links-from-mdown">Download Library</a>
@@ -28,7 +58,7 @@
             </ul>
         </div>
     </nav>
-    
+
     <section>
         <!-- <div class="row"> -->
         <div class="col s12 information">
