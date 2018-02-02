@@ -32,10 +32,10 @@ http.createServer((request, response) =>{
 
   contentType = mimeTypes[extname] || 'application/octet-stream';
 
-  fs.readFile(filePath, function (error, content) {
+  fs.readFile(filePath, function(error, content) {
     if (error) {
       if (error.code == 'ENOENT') {
-        fs.readFile('./404.html', function (error, content) {
+        fs.readFile('./404.html', function(error, content) {
           response.writeHead(200, {
             'Content-Type': contentType,
           });
