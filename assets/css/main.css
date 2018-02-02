@@ -134,9 +134,10 @@ filter: alpha(opacity=50); /* For IE8 and earlier */
 
 .information h3{
     font-family: 'Source Sans Pro', sans-serif;
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 1em;
     text-align: center;
+    margin-top: -1%;
 }
 
 .information{
