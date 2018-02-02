@@ -8,11 +8,12 @@ El modulo esta desarrollado con **JavaScript**, **Node** y los test se realizaro
 
 ## Instalación
 
-1. Descargar el modulo extract-links-from-md, de la página https://www.npmjs.com/.
+1. Descargar el código fuente de la librería extract-links-from-mdown,del siguiente enlace:
+https://github.com/ValeritaPaz/extract-links-from-md/tree/claudvalekelly/extract-links-from-mdown
 
 2. Dentro de la librería existe una función llamada extract, que toma como argumento un texto en formato markdown y extrae un array de objetos con los links y sus textos correspondientes.
 
-3. Si desea ver ejemplos de uso de la librería, puede descargar un demo aquí: https://github.com/ValeritaPaz/extract-links-from-md/tree/claudvalekelly
+3. Si desea ver ejemplos de uso de la librería, puede descargar el demo aquí: https://github.com/ValeritaPaz/extract-links-from-md/tree/claudvalekelly
 
 ## Demo
 

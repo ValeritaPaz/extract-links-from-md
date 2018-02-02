@@ -37,4 +37,11 @@ buttonSearch.addEventListener('click', function () {
     console.log(xhr.status);
 });
 
+<<<<<<< HEAD
  
+=======
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+>>>>>>> refs/remotes/origin/claudvalekelly

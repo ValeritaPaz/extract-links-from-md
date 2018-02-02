@@ -121,4 +121,3 @@ module.exports = {
   extractBracketsParentheses,
   sameSize,
 };
-
