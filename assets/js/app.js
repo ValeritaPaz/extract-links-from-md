@@ -1,8 +1,6 @@
 var buttonSearch = document.querySelector('#button');
-
 var textArea = document.querySelector('#textarea1');
 var boxResponse = document.querySelector('#boxResponse');
-
 buttonSearch.addEventListener('click', function () {
     var text = textArea.value;
     var xhr = new XMLHttpRequest();
@@ -11,13 +9,7 @@ buttonSearch.addEventListener('click', function () {
     xhr.responseType = 'text';
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
-
             boxResponse.textContent = xhr.responseText;
-
-
-
-
-
             //console.log(boxResponse.textContent);
         }
         var textParse;
@@ -29,8 +21,6 @@ buttonSearch.addEventListener('click', function () {
             responseCounter.appendChild(document.createTextNode(textParse.length));
         } else {
             responseCounter.appendChild(document.createTextNode(0));        }
-
-
     };
     xhr.setRequestHeader('Content-Type', 'charset=UTF-8');
     xhr.send(text);

@@ -1,69 +1,64 @@
-
-.buscador{
+.buscador {
     margin-top: 20em;
     margin-left: 20em;
     width: 15em;
 }
 
-#backColor{
+#backColor {
     margin: 0;
     background-color: #545252;
 }
 
-.colorTextArea{
-
-   border-radius: 10px 10px 10px 10px;
--moz-border-radius: 10px 10px 10px 10px;
--webkit-border-radius: 10px 10px 10px 10px;
-background-color: #FCB6B9;
-padding-top: 1.5em;
-padding-bottom: 1.5em;
-
-}
-.materialize-textarea{
-   overflow:visible !important;
-   height: 10.7em !important;
-   text-align: justify;
+.colorTextArea {
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    background-color: #FCB6B9;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
+.materialize-textarea {
+    overflow: visible !important;
+    height: 10.7em !important;
+    text-align: justify;
+}
 
-#textarea1{
+#textarea1 {
     background-color: #FFD7B8;
     resize: none;
 }
 
-#textarea1::placeholder { color: #B46B33}
+#textarea1::placeholder {
+    color: #B46B33
+}
 
-#boxResponse{
+#boxResponse {
     font-size: 1.4em;
     font-weight: bold;
     color: #545252;
 }
 
-.box{
+.box {
     background-color: white;
 }
 
-
-
-button{
+button {
     margin-bottom: 1em;
 }
 
-nav{
-    background-color:#ffffff;
-
+nav {
+    background-color: #ffffff;
 }
 
-.page-footer{
+.page-footer {
     background-color: #17426f;
 }
 
-.info{
+.info {
     background-color: white;
     height: 30em;
     width: 100%;
-    
 }
 
 nav .brand-logo {
@@ -74,15 +69,9 @@ nav .brand-logo {
     padding: 0;
 }
 
-
-
-
-
-.title{
+.title {
     font-size: 1em;
 }
-
-
 
 .row .col.s12 {
     width: 100%;
@@ -91,9 +80,7 @@ nav .brand-logo {
     right: auto;
 }
 
-
-
-  .nav-wrapper {
+.nav-wrapper {
     background-color: #ffffff;
 }
 
@@ -106,33 +93,31 @@ nav ul a {
     padding: 0 15px;
     cursor: pointer;
     font-family: 'Source Sans Pro', sans-serif;
-
 }
 
-.fontBlue{
+.fontBlue {
     color: #FA9095;
     font-family: 'Source Sans Pro', sans-serif;
-font-weight: bold;
-font-size: 2em;
+    font-weight: bold;
+    font-size: 2em;
 }
 
-.fontGray{
+.fontGray {
     color: #C4E4E1;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     font-size: 2em;
-
-
 }
 
-img[src="assets/images/logo2.png"]{
-width: 8em;
-margin-top: -14em;
-opacity: 0.4;
-filter: alpha(opacity=50); /* For IE8 and earlier */
+img[src="assets/images/logo2.png"] {
+    width: 8em;
+    margin-top: -14em;
+    opacity: 0.4;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
 }
 
-.information h3{
+.information h3 {
     font-family: 'Source Sans Pro', sans-serif;
     padding-top: 2em;
     padding-bottom: 1em;
@@ -140,21 +125,23 @@ filter: alpha(opacity=50); /* For IE8 and earlier */
     margin-top: -1%;
 }
 
-.information{
+.information {
     text-align: center;
 }
-.tittleLinks{
+
+.tittleLinks {
     font-weight: bolder;
 }
-.textAreaOne{
+
+.textAreaOne {
     border-radius: 10px 0px 0px 10px;
     -moz-border-radius: 10px 0px 0px 10px;
     -webkit-border-radius: 10px 0px 0px 10px;
     background-color: #FFD7B8;
     height: 22em;
-
 }
-.textAreaTwo{
+
+.textAreaTwo {
     border-radius: 0px 10px 10px 0px;
     -moz-border-radius: 0px 10px 10px 0px;
     -webkit-border-radius: 0px 10px 10px 0px;
@@ -162,7 +149,19 @@ filter: alpha(opacity=50); /* For IE8 and earlier */
     height: 22em;
 }
 
-input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
     background-color: transparent;
     border: none;
     border-radius: 0;
@@ -179,10 +178,13 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #D45B61 !important;
 }
-.btn, .btn-large {
+
+.btn,
+.btn-large {
     text-decoration: none;
     color: #fff;
     background-color: #FA9095 !important;
@@ -192,79 +194,96 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     transition: .2s ease-out;
     cursor: pointer;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: row;
 }
-.counter{
+
+.counter {
     margin-left: 2em;
     color: #D45B61;
 }
-.response{
+
+.response {
     font-weight: bolder;
 }
-span p{
+
+span p {
     display: inline;
 }
+
 .counter {
     font-weight: bolder;
 }
-.buttonBig{
+
+.buttonBig {
     height: 4em !important;
 }
-.textJustify{
+
+.textJustify {
     text-align: justify;
 }
-.infoLibrery h3{
+
+.infoLibrery h3 {
     margin-top: 2em;
     font-weight: bolder;
     text-align: center;
 }
-.infoLibrery p{
+
+.infoLibrery p {
     font-size: 1.5em;
 }
-.demoLibrery h3{
+
+.demoLibrery h3 {
     margin-top: 2em;
     text-align: center;
     font-weight: bolder;
 }
-code{
+
+code {
     text-align: justify;
 }
-.developer a{
+
+.developer a {
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
-.entorno a{
+
+.entorno a {
     text-decoration: none;
     color: white;
 }
-.steps h3{
+
+.steps h3 {
     text-align: center;
     font-weight: bold;
 }
-img[src="assets/images/one.png"]{
+
+img[src="assets/images/one.png"] {
     width: 2em;
 }
-.imageOne{
+
+.imageOne {
     display: inline;
 }
-section h3{
+
+section h3 {
     text-align: center;
     font-weight: bold;
     margin-top: 2em;
 }
 
-.modal-trigger{
+.modal-trigger {
     left: 50em;
 }
 
-h4{
+h4 {
     color: #D45B61;
 }
 
-.collapsible-header{
+.collapsible-header {
     width: auto;
     height: 10em;
     background-color: red;
