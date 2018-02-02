@@ -22,7 +22,7 @@ buttonSearch.addEventListener('click', function () {
         }
         var textParse;
         textParse = (JSON.parse(boxResponse.textContent));
-        console.log(textParse);
+        //console.log(textParse);
         var responseCounter = document.querySelector('.responseCounter');
         responseCounter.innerHTML = '';
         if (Array.isArray(textParse)) {
@@ -36,7 +36,3 @@ buttonSearch.addEventListener('click', function () {
     xhr.send(text);
 });
 
-$(document).ready(function(){
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
-  });

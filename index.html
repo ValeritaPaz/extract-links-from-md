@@ -14,6 +14,7 @@
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo2.png">
 </head>
+
 <body>
     <nav>
         <div class="nav-wrapper">
@@ -21,36 +22,6 @@
                 <span class="fontBlue">&nbsp;Extract</span>
                 <span class="fontGray"> Links</span>&nbsp;
             </a>
-             <!-- Modal Trigger -->
-             <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modo de uso</a>
-             <!-- Modal Structure -->
-             <div id="modal1" class="modal modal-fixed-footer">
-             <div class="modal-content">
-             <h4>Pasos a seguir</h4>
-             <p>
-             <br>
-            Desde la consola, ubicarse en el directorio de la librería y escribir index.js. De esta maera se inicia el servidor.
-
-           Paso # 2
-           <br>
-           Hacer clic en el url que aparece en el terminal http://127.0.0.1:8080/
-
-        Paso # 3
-Una vez que se encuentre ubicado en la página web, agregar texto en formato markdown en el campo que se encuentra ubicado en el lado izquierdo de la página y haz clic en el botón Extraer Links. Del lado derecho aparecerán los links encontrados.
-
-Section 4
-Otra manera de usar la librería es a través de la consola. Para ello primero debes abrir con tu editor de texto, el archivo index.js
-
-Section 5
-Dentro del archivo, debe inicializar una variable y asignarle un string en el formato markdown. Luego inicializas otra variable y dentro de ella, llamas a la función, y se le pasa como argumento la variable que contiene el string. var resultado = extract_links.extract(str);
-
-Section 6
-Guarda los cambios. Ahora en el terminal, escribe el comando node index.js y presiona la tecla ENTER. Ahora saldrán los links en contrados en el texto.</p>
-             </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
-    </div>
-  </div>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
                     <a class="waves-effect waves-light btn" href="https://www.npmjs.com/package/extract-links-from-mdown">Download Library</a>
@@ -94,37 +65,37 @@ Guarda los cambios. Ahora en el terminal, escribe el comando node index.js y pre
         </div>
     </div>
     <footer class="page-footer">
-       <div class="container">
-           <div class="row">
-               <div class="col l4 s12">
-                   <h5 class="white-text">Extract Links</h5>
-                   <p class="grey-text text-lighten-4">El extractor de Links de archivos Markdown, es un módulo de Node.js, cuya funcionalidad se centra en
-                       extraer todos los links encontrados en un archivo en formato Markdown.</p>
-               </div>
-               <div class="col l4 s12">
-                   <h5 class="white-text">Desarrolladores</h5>
-                   <p class="grey-text text-lighten-4 developer">
-                       <a href="https://github.com/Klebuck">Raquel Jarpa</a>
-                   </p>
-                   <p class="grey-text text-lighten-4 developer">
-                       <a href="https://github.com/Klebuck">Claudina Cortez</a>
-               </div>
-               <div class="col l4 s12 entorno" style="overflow: hidden;">
-                   <h5 class="white-text">Entorno de desarrollo</h5>
-                   <p>
-                   <a href="http://materializecss.com/">Materialize</a>
-                   </p>
-                   <p>
-                   <a href="https://nodejs.org/es/">Node js</a>
-                   </p>
-                   <a href="https://mochajs.org/">Mocha js</a>
-               </div>
-           </div>
-           <div class="footer-copyright">
-               <div class="container">© 2018 Extract Links, All rights reserved.
-               </div>
-           </div>
-   </footer>
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h5 class="white-text">Extract Links</h5>
+                    <p class="grey-text text-lighten-4">El extractor de Links de archivos Markdown, es un módulo de Node.js, cuya funcionalidad se centra en
+                        extraer todos los links encontrados en un archivo en formato Markdown.</p>
+                </div>
+                <div class="col l4 s12">
+                    <h5 class="white-text">Desarrolladores</h5>
+                    <p class="grey-text text-lighten-4 developer">
+                        <a href="https://github.com/Klebuck">Raquel Jarpa</a>
+                    </p>
+                    <p class="grey-text text-lighten-4 developer">
+                        <a href="https://github.com/Klebuck">Claudina Cortez</a>
+                </div>
+                <div class="col l4 s12 entorno" style="overflow: hidden;">
+                    <h5 class="white-text">Entorno de desarrollo</h5>
+                    <p>
+                        <a href="http://materializecss.com/">Materialize</a>
+                    </p>
+                    <p>
+                        <a href="https://nodejs.org/es/">Node js</a>
+                    </p>
+                    <a href="https://mochajs.org/">Mocha js</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">© 2018 Extract Links, All rights reserved.
+                </div>
+            </div>
+    </footer>
     <script src="assets/js/app.js"></script>
 </body>
 
