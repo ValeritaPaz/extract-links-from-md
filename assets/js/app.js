@@ -34,14 +34,5 @@ buttonSearch.addEventListener('click', function () {
     };
     xhr.setRequestHeader('Content-Type', 'charset=UTF-8');
     xhr.send(text);
-    console.log(xhr.status);
 });
 
-<<<<<<< HEAD
- 
-=======
-$(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
-  });
->>>>>>> refs/remotes/origin/claudvalekelly

@@ -22,7 +22,7 @@ padding-bottom: 1.5em;
 }
 .materialize-textarea{
    overflow:visible !important;
-   height: 11.1em !important;
+   height: 10.7em !important;
    text-align: justify;
 }
 
@@ -134,19 +134,18 @@ filter: alpha(opacity=50); /* For IE8 and earlier */
 
 .information h3{
     font-family: 'Source Sans Pro', sans-serif;
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 1em;
     text-align: center;
+    margin-top: -1%;
 }
 
 .information{
     text-align: center;
 }
-
 .tittleLinks{
     font-weight: bolder;
 }
-
 .textAreaOne{
     border-radius: 10px 0px 0px 10px;
     -moz-border-radius: 10px 0px 0px 10px;
@@ -155,14 +154,12 @@ filter: alpha(opacity=50); /* For IE8 and earlier */
     height: 22em;
 
 }
-
 .textAreaTwo{
     border-radius: 0px 10px 10px 0px;
     -moz-border-radius: 0px 10px 10px 0px;
     -webkit-border-radius: 0px 10px 10px 0px;
     background-color: #C4E4E1;
     height: 22em;
-
 }
 
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
@@ -182,15 +179,9 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
-
-
-
-
 .btn:hover{
     background-color: #D45B61 !important;
 }
-
-
 .btn, .btn-large {
     text-decoration: none;
     color: #fff;
@@ -201,90 +192,66 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     transition: .2s ease-out;
     cursor: pointer;
 }
-
 .content{
     display: flex;
     flex-direction: row;
 }
-
 .counter{
     margin-left: 2em;
     color: #D45B61;
 }
-
 .response{
     font-weight: bolder;
-
 }
-
 span p{
     display: inline;
 }
-
 .counter {
     font-weight: bolder;
-
 }
-
-<<<<<<< Updated upstream
-.counter .textCounter{
-    margin-top: -1em;
-=======
 .buttonBig{
     height: 4em !important;
 }
-
 .textJustify{
     text-align: justify;
 }
-
 .infoLibrery h3{
     margin-top: 2em;
     font-weight: bolder;
     text-align: center;
 }
-
 .infoLibrery p{
     font-size: 1.5em;
 }
-
 .demoLibrery h3{
     margin-top: 2em;
     text-align: center;
     font-weight: bolder;
 }
-
 code{
     text-align: justify;
 }
-
 .developer a{
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
-
 .entorno a{
     text-decoration: none;
     color: white;
 }
-
 .steps h3{
     text-align: center;
     font-weight: bold;
 }
-
 img[src="assets/images/one.png"]{
     width: 2em;
 }
-
 .imageOne{
     display: inline;
 }
-
 section h3{
     text-align: center;
     font-weight: bold;
     margin-top: 2em;
->>>>>>> Stashed changes
 }
